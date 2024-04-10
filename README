@@ -1,0 +1,115 @@
+
+>>> Data Processing
+
+This assignment is to create a computer vision model that can detect the presence of a gesture in a video.
+
+# In this folder we have 4 main files:
+1. collect_images.py
+2. collect_databases.py
+3. training.py
+4. interference_classifier.py
+
+# The first file is used to collect images of gestures of your choice and save them in a folder.
+
+# The second file is used to create the database of images that you have collected.
+
+# The third file is used to train the model using the database that you have created.
+
+# The fourth file is used to test the model on a video.
+
+# The first step is to collect images of the gestures that you want to detect. You can collect images of gestures by running the collect_images.py file. This file will open a window where you can see yourself and collect images of the gestures that you want to detect.
+
+# The second step is to create a database of images that you have collected. You can create a database of images by running the collect_databases.py file. This file will create a database of images that you have collected and save it in a folder.
+
+# This will create a data folder in which our collected images will be stored.
+
+# The third step is to train the model using the database that you have created. You can train the model by running the training.py file. This file will train the model using the database that you have created and save the model in model.p
+
+# The fourth step is to test the model on a video. You can test the model on a video by running the interference_classifier.py file. This file will test the model on a video and display the result on the screen.
+
+
+
+>>> Model Selection/Development:
+
+
+# The model that we are using is a Convolutional Neural Network (CNN). CNNs are a type of deep learning model that are used for image classification tasks. CNNs are composed of multiple layers of neurons that are connected in a way that allows the model to learn features from the input data.
+
+# The CNN model that we are using has the following architecture:
+
+1. Convolutional Layer: This layer is used to extract features from the input data. The convolutional layer applies a filter to the input data and produces a feature map.
+
+2. Pooling Layer: This layer is used to reduce the size of the feature map and make the model more computationally efficient.
+
+3. Fully Connected Layer: This layer is used to classify the input data into different classes. The fully connected layer takes the features extracted by the convolutional and pooling layers and produces an output.
+
+# The CNN model that we are using has the following hyperparameters:
+
+1. Number of Convolutional Layers: 3
+2. Number of Pooling Layers: 3
+3. Number of Fully Connected Layers: 2
+
+
+>>> Detection alogoithm:
+
+# In this project, I have used a Convolutional Neural Network (CNN) to detect the presence of a gesture in a video. The CNN model takes an input video and processes it frame by frame to detect the presence of a gesture.
+
+# The CNN model is trained on a database of images that is taken by the user. A camera window will open and then you have to show different gestures to the camera. The images of the gestures will be collected and saved in a folder using OpenCV. 
+
+# The CNN model is trained on the database of images and then tested on a video. The CNN model processes the video frame by frame and detects the presence of a gesture in each frame.
+
+# In the testing phase, the CNN model will output the presence of a gesture in each frame of the video. The output will be displayed on the screen as a text message and on the video as well.
+
+
+>>> Annotation:
+
+# Here we have used OpenCV Module to collect images of gestures. OpenCV is a computer vision library that provides tools for image and video processing. OpenCV provides functions for reading, writing, and processing images and videos.
+
+# there is a function called cv2.putText() which is used to display text on an image or video. This function takes the following parameters:
+1. Frame: The image or video frame on which the text will be displayed.
+
+2. Text: The text that will be displayed on the image or video.
+
+3. Position: The position where the text will be displayed on the image or video.
+
+4. Font: The font of the text that will be displayed on the image or video.
+
+5. Font Size: The font size of the text that will be displayed on the image or video.
+
+6. Color: The color of the text that will be displayed on the image or video.
+
+
+>>> Documentation:
+
+# The documentation of the project is done using the comments in the code. The comments explain the purpose of each function and the logic behind the code. The comments also explain the input and output of each function and the parameters that are passed to the function.
+
+# Used module are : 
+1. OpenCV
+2. Numpy
+3. Tensorflow
+4. MediaPipe
+5. Sklearn
+6. Matplotlib
+7. Pickle
+
+
+#openCV is used for image and video processing.
+
+#Numpy is used for numerical operations.
+
+#Tensorflow is used for building and training the CNN model.
+
+#MediaPipe is used for hand tracking.
+
+#Sklearn is used for splitting the data into training and testing sets.
+
+#Matplotlib is used for plotting the images and graphs.
+
+#Pickle is used for saving and loading the model.
+
+
+
+>>> Conclusion:
+
+# In this project, I have created a computer vision model that can detect the presence of a gesture in a video. The model is trained on a database of images that is collected by the user. The model is tested on a video and the presence of a gesture is detected in each frame of the video. The output is displayed on the screen as a text message and on the video as well.
+
+# The model can be used for various applications such as sign language recognition, gesture recognition, and human-computer interaction. The model can be further improved by collecting more data and training the model on a larger database of images.
