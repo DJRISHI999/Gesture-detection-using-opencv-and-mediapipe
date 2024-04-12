@@ -3,4 +3,4 @@ scikit-learn
 mediapipe
 tensorflow
 numpy
-python 3.11
+
